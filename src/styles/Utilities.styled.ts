@@ -7,7 +7,7 @@ import { css } from "styled-components";
  * @returns string containing rem equivalent of pixel value.
  */
 export const rem = (value: number, omitUnit = false) => {
-  return `${value / 16}${omitUnit === true ? "" : "rem"}`;
+  return value === 0 ? 0 : `${value / 16}${omitUnit === true ? "" : "rem"}`;
 };
 
 /**
@@ -70,21 +70,18 @@ export const bp = {
 
 // Media queries
 export const mq = {
-  small: `(min-width: ${bp.small})`,
-  smallX: `(min-width: ${bp.smallX})`,
-  smallXX: `(min-width: ${bp.smallXX})`,
-  medium: `(min-width: ${bp.medium})`,
-  large: `(min-width: ${bp.large})`,
-  largeX: `(min-width: ${bp.largeX})`,
-  extreme: `(min-width: ${bp.extreme})`,
+  small: `min-width: ${bp.small}`,
+  smallX: `min-width: ${bp.smallX}`,
+  smallXX: `min-width: ${bp.smallXX}`,
+  medium: `min-width: ${bp.medium}`,
+  large: `min-width: ${bp.large}`,
+  largeX: `min-width: ${bp.largeX}`,
+  extreme: `min-width: ${bp.extreme}`,
 };
 
 export const theme = {
   colors: {
-    primary100: "hsl(19, 100%, 93%)",
-    primary400: "hsl(19, 98%, 54%)",
-    primary700: "hsl(20, 85%, 19%)",
-
+    primary400: "",
 
     // NEUTRAL
     white: "hsl(0, 0%, 100%)",
@@ -96,7 +93,7 @@ export const theme = {
   },
   fonts: {
     primary: `'Poppins', sans-serif`,
-    accent: `'Garamond', serif`,
+    accent: `serif`,
   },
   ease: {
     // easing functions
@@ -113,7 +110,7 @@ export const theme = {
 };
 
 /*********************************************************************
-CSS UTILITIES (like Sass mixins)
+CSS UTILITIES (similar to Sass mixins)
 **********************************************************************/
 export const flexCenter = css`
   display: flex;
