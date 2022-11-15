@@ -2,6 +2,5 @@ node_modules/*
 dist/*
 build/*
 public/*
-.eslintrc.js
 custom.d.ts
 vite-env.d.ts
