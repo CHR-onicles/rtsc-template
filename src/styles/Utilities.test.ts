@@ -1,5 +1,7 @@
-import { test, expect, describe } from "vitest";
-import { rem, alpha, mq, bp } from "./Utilities.styled";
+import { describe,expect, test } from "vitest";
+
+import { alpha, bp,mq, rem } from "./Utilities.styled";
+
 
 describe("Properly convert from px to rem", () => {
   test("0 returns 0, not 0rem", () => expect(rem(0)).toBe(0));

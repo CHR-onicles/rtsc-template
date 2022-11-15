@@ -43,7 +43,7 @@ export const alpha = (color: string, opacity = 1) => {
   if (hsl_pattern.test(color)) {
     newColor = color.slice(0, color.length - 1) + `,${formatted_opacity})`;
   } else if (hsl_pattern_with_opacity.test(color)) {
-    let temp = color.split(",");
+    const temp = color.split(",");
     newColor = temp.reduce((acc, item, index) => {
       if (index === temp.length - 1) return `${acc},${String(opacity)})`;
       if (index > 0) return acc + "," + item;

@@ -1,5 +1,7 @@
-import { flexSpBetween, theme } from "@styles/Utilities.styled";
 import styled from "styled-components";
+
+import { flexSpBetween, theme } from "@styles/Utilities.styled";
+
 
 export const StyledApp = styled.main`
   nav {

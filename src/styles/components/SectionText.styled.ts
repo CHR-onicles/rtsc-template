@@ -1,5 +1,7 @@
-import { mq, rem, theme } from "@styles/Utilities.styled";
 import styled from "styled-components";
+
+import { mq, rem, theme } from "@styles/Utilities.styled";
+
 
 export const SectionText = styled.p`
   margin-top: 2rem;
