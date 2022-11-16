@@ -7,7 +7,7 @@ import { css } from "styled-components";
  * @returns string containing rem equivalent of pixel value.
  */
 export const rem = (value: number, omitUnit = false) => {
-  return value === 0 ? 0 : `${value / 16}${omitUnit === true ? "" : "rem"}`;
+  return value === 0 ? "0" : `${value / 16}${omitUnit === true ? "" : "rem"}`;
 };
 
 /**
