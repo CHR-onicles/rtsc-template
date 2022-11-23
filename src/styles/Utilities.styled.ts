@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css, keyframes } from "styled-components";
 
 /**
  * Helper function to convert from px to rem (1rem = 16px by browser default).
@@ -152,3 +152,9 @@ export const size = (width: string, height = width) => {
     height: ${height};
   `;
 };
+
+const textRevealFromBottom = keyframes`
+  to {
+    transform: translateY(0%) skewY(0);
+}
+`;
