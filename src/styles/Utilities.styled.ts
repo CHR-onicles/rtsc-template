@@ -153,7 +153,7 @@ export const size = (width: string, height = width) => {
   `;
 };
 
-const textRevealFromBottom = keyframes`
+export const textRevealFromBottom = keyframes`
   to {
     transform: translateY(0%) skewY(0);
 }

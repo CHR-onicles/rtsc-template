@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { rem, theme } from "./Utilities.styled";
+import { rem, size, theme } from "./Utilities.styled";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -45,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
 
     img, iframe {
         display: block;
+        ${size("100%")}
         max-width: 100%;
         object-fit: cover;
         object-position: center;
