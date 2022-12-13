@@ -4,3 +4,4 @@ build/*
 public/*
 custom.d.ts
 vite-env.d.ts
+vite.config.ts
