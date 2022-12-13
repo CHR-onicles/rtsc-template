@@ -4,6 +4,7 @@ import { GlobalStyles } from "@styles/GlobalStyles.styled";
 import { ReactComponent as Logo } from "./assets/react.svg";
 import { StyledApp } from "./App.styled";
 
+
 export const App = () => {
   return (
     <>
