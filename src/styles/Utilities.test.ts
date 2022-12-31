@@ -1,10 +1,10 @@
-import { describe,expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 
-import { alpha, bp,mq, rem } from "./Utilities.styled";
+import { alpha, bp, mq, rem } from "./Utilities.styled";
 
 
 describe("Properly convert from px to rem", () => {
-  test("0 returns 0, not 0rem", () => expect(rem(0)).toBe(0));
+  test("0 returns the string '0', not 0rem", () => expect(rem(0)).toBe("0"));
 
   test("16px returns 1rem", () => expect(rem(16)).toBe("1rem"));
 
