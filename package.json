@@ -9,9 +9,11 @@
     "preview": "npm run build && vite preview",
     "test": "vitest --coverage",
     "lint": "eslint src/.",
-    "lint:fix": "eslint --fix src/."
+    "lint:fix": "eslint --fix src/.",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "lint-staged": "^13.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6"
@@ -30,10 +32,15 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-simple-import-sort": "^8.0.0",
+    "husky": "^8.0.0",
     "typescript": "^4.9.4",
     "vite": "^4.0.3",
     "vite-plugin-svgr": "^2.4.0",
     "vite-tsconfig-paths": "^4.0.3",
     "vitest": "^0.26.2"
+  },
+  "lint-staged": {
+    "src/**/*.{ts, tsx, js, jsx}": "eslint --fix",
+    "src/*.{tsx, ts, js, jsx}": "eslint --fix"
   }
 }
