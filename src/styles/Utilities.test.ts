@@ -58,8 +58,7 @@ describe("Properly add alpha values to hex and hsl colors", () => {
 });
 
 describe("Media queries work as intended", () => {
-  test("bp.small returns 375px => 23.4375em", () =>
-    expect(bp.small).toBe("23.4375em"));
+  test("bp.small returns 768px => 48em", () => expect(bp.small).toBe("48em"));
   test("mq.small returns the right query", () =>
-    expect(mq.small).toBe("min-width: 23.4375em"));
+    expect(mq.small).toBe("min-width: 48em"));
 });
