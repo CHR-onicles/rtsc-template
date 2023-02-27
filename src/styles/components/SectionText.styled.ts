@@ -15,7 +15,7 @@ export const SectionText = styled.p`
     text-align: left;
     margin-inline: 0;
   }
-  @media screen and (${mq.large}) {
+  @media screen and (${mq.large1}) {
     max-width: 50ch;
   }
 `;
