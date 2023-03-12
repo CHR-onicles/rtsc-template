@@ -42,6 +42,7 @@
               // Internal packages.
               ["^(@pages)(/.*|$)"],
               ["^(@components)(/.*|$)"],
+              ["^(@utils)(/.*|$)"],
               ["^(@data)(/.*|$)"],
               ["^(@styles)(/.*|$)"],
               ["^(@assets)(/.*|$)"],
