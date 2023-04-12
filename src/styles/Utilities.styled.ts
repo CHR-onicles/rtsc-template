@@ -118,6 +118,11 @@ export const flexCenter = css`
   align-items: center;
 `;
 
+export const alignItemsCenter = css`
+  display: flex;
+  align-items: center;
+`;
+
 export const flexColumn = css`
   display: flex;
   flex-direction: column;
