@@ -5,9 +5,22 @@ import Image from "@assets/black-panther.webp";
 
 import { ReactComponent as Logo } from "./assets/react.svg";
 import { StyledApp } from "./App.styled";
-
+import Lenis from "@studio-freight/lenis";
 
 export const App = () => {
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e: Event) => {
+    console.log(e);
+  });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   return (
     <>
       <GlobalStyles />
@@ -37,6 +50,40 @@ export const App = () => {
               necessitatibus!
             </p>
 
+            <h2>Random header 2</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+              et, sed, ipsam voluptates iste atque nesciunt nemo deserunt
+              deleniti provident, eligendi odio corrupti accusamus? Quam, optio.
+              Tenetur ullam, suscipit earum error accusamus, maxime assumenda
+              beatae debitis deleniti molestiae quae necessitatibus! provident,
+              eligendi odio corrupti accusamus? Quam, optio. Tenetur ullam,
+              suscipit earum error accusamus, maxime assumenda beatae debitis
+              deleniti molestiae quae necessitatibus! provident, eligendi odio
+              corrupti accusamus? Quam, optio. Tenetur ullam, suscipit earum
+              error accusamus, maxime assumenda beatae debitis deleniti
+              molestiae quae necessitatibus! provident, eligendi odio corrupti
+              accusamus? Quam, optio. Tenetur ullam, suscipit earum error
+              accusamus, maxime assumenda beatae debitis deleniti molestiae quae
+              necessitatibus!
+            </p>
+            <h2>Random header 2</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+              et, sed, ipsam voluptates iste atque nesciunt nemo deserunt
+              deleniti provident, eligendi odio corrupti accusamus? Quam, optio.
+              Tenetur ullam, suscipit earum error accusamus, maxime assumenda
+              beatae debitis deleniti molestiae quae necessitatibus! provident,
+              eligendi odio corrupti accusamus? Quam, optio. Tenetur ullam,
+              suscipit earum error accusamus, maxime assumenda beatae debitis
+              deleniti molestiae quae necessitatibus! provident, eligendi odio
+              corrupti accusamus? Quam, optio. Tenetur ullam, suscipit earum
+              error accusamus, maxime assumenda beatae debitis deleniti
+              molestiae quae necessitatibus! provident, eligendi odio corrupti
+              accusamus? Quam, optio. Tenetur ullam, suscipit earum error
+              accusamus, maxime assumenda beatae debitis deleniti molestiae quae
+              necessitatibus!
+            </p>
             <h2>Random header 2</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
