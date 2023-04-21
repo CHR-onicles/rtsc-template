@@ -8,7 +8,7 @@ import { StyledApp } from "./App.styled";
 import Lenis from "@studio-freight/lenis";
 
 export const App = () => {
-  const lenis = new Lenis();
+  const lenis = new Lenis({ lerp: 0.5, duration: 2 });
 
   lenis.on("scroll", (e: Event) => {
     console.log(e);
