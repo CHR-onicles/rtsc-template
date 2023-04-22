@@ -1,3 +1,5 @@
+import Lenis from "@studio-freight/lenis";
+
 import { Container } from "@styles/components/Container.styled";
 import { GlobalStyles } from "@styles/GlobalStyles.styled";
 
@@ -5,7 +7,7 @@ import Image from "@assets/black-panther.webp";
 
 import { ReactComponent as Logo } from "./assets/react.svg";
 import { StyledApp } from "./App.styled";
-import Lenis from "@studio-freight/lenis";
+
 
 export const App = () => {
   const lenis = new Lenis({ lerp: 0.5, duration: 2 });

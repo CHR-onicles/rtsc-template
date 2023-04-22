@@ -11,7 +11,8 @@
     "test:once": "vitest run --coverage",
     "lint": "eslint src/.",
     "lint:fix": "eslint --fix src/.",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.10",
