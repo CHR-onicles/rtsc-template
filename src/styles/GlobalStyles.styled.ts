@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         /* scroll-behavior: smooth; */ // for faster scroll to top during page transitions
-        height: 100%;
+        /* height: 100%; */ // Lenis needs this to be auto
     }
 
     body {
