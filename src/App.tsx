@@ -12,10 +12,6 @@ import { StyledApp } from "./App.styled";
 export const App = () => {
   const lenis = new Lenis({ lerp: 0.5, duration: 2 });
 
-  lenis.on("scroll", (e: Event) => {
-    console.log(e);
-  });
-
   function raf(time: number) {
     lenis.raf(time);
     requestAnimationFrame(raf);
