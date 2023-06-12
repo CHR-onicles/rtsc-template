@@ -40,7 +40,6 @@
               // Packages `react` related packages come first.
               ["^react", "^@?\\w"],
               // Internal packages.
-              ["^(@routes)(/.*|$)"],
               ["^(@pages)(/.*|$)"],
               ["^(@components)(/.*|$)"],
               ["^(@utils)(/.*|$)"],
