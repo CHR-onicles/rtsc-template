@@ -8,7 +8,8 @@
       "@data/*": ["src/data/*"],
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
-      "@routes/*": ["src/routes/*"]
+      "@hooks/*": ["src/hooks/*"],
+      "@customTypes/*": ["src/types/*"]
     }
   }
 }

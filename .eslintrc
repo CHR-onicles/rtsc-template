@@ -44,6 +44,8 @@
               ["^(@components)(/.*|$)"],
               ["^(@utils)(/.*|$)"],
               ["^(@data)(/.*|$)"],
+              ["^(@hooks)(/.*|$)"],
+              ["^(@customTypes)(/.*|$)"],
               ["^(@styles)(/.*|$)"],
               ["^(@assets)(/.*|$)"],
               // Side effect imports.
