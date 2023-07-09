@@ -25,7 +25,7 @@ export const App = () => {
       <StyledApp>
         <Container>
           <nav>
-            <h2>SC-template</h2>
+            <h2>rtsc-template</h2>
             <Logo />
           </nav>
           <img src={Image} alt="black panther movie poster" />

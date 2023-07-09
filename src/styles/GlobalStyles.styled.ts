@@ -71,6 +71,7 @@ export const GlobalStyles = createGlobalStyle`
     button {
         cursor: pointer;
         background: none;
+        white-space: nowrap;
     }
 
    //  Correct the inability to style clickable types in iOS and Safari.
