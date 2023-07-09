@@ -1,4 +1,4 @@
-# sc-template
+# rtsc-template
 
 Personal template for React projects
 
