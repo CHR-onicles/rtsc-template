@@ -1,5 +1,7 @@
 {
   "parserOptions": {
+    "project": true,
+    "tsconfigRootDir": ".",
     "sourceType": "module",
     "ecmaVersion": 2020,
     "ecmaFeatures": {
@@ -21,6 +23,8 @@
     "plugin:import/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:jsx-a11y/recommended"
   ],
   "rules": {
@@ -41,11 +45,11 @@
               ["^react", "^@?\\w"],
               // Internal packages.
               ["^(@pages)(/.*|$)"],
+              ["^(@layouts)(/.*|$)"],
               ["^(@components)(/.*|$)"],
-              ["^(@contexts)(/.*|$)"],
-              ["^(@hooks)(/.*|$)"],
               ["^(@utils)(/.*|$)"],
               ["^(@data)(/.*|$)"],
+              ["^(@hooks)(/.*|$)"],
               ["^(@customTypes)(/.*|$)"],
               ["^(@styles)(/.*|$)"],
               ["^(@assets)(/.*|$)"],
