@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-import { mq, rem, theme } from "@styles/Utilities.styled";
+import { mq, rem } from "@styles/Utilities.styled";
 
 
 export const SectionText = styled.p`
   margin-top: 2rem;
-  color: ${theme.colors.gray700};
+  color: var(--clr-gray-800);
   font-size: ${rem(15)};
   text-align: center;
   max-width: 45ch;

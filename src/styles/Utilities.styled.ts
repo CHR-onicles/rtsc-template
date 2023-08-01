@@ -79,35 +79,35 @@ export const mq = {
   extreme: `min-width: ${bp.extreme}`,
 };
 
-export const theme = {
-  colors: {
-    primary400: "",
+// export const theme = {
+//   colors: {
+//     primary400: "",
 
-    // NEUTRAL
-    white: "hsl(0, 0%, 100%)",
-    black: "hsl(0, 0%, 0%)",
-    gray100: "	hsl(220, 23%, 97%)",
-    gray200: "hsl(0, 0%, 77%)",
-    gray300: "hsl(0, 0%, 50%)",
-    gray700: "hsl(0, 0%, 12%)",
-  },
-  fonts: {
-    primary: `'Poppins', sans-serif`,
-    accent: `serif`,
-  },
-  ease: {
-    // easing functions
-    slowStart: "cubic-bezier(0.52, 0.01, 0, 1)",
-    quickStartAndEnd: "cubic-bezier(0.19, 1, 0.22, 1)",
-    almostLinear: "cubic-bezier(0.4,0.6,0.6,1)",
-    textReveal: "cubic-bezier(0.77, 0, 0.175, 1)",
-  },
-  borderRadius: {
-    small: rem(5),
-    medium: rem(10),
-    large: rem(15),
-  },
-};
+//     // NEUTRAL
+//     white: "hsl(0, 0%, 100%)",
+//     black: "hsl(0, 0%, 0%)",
+//     gray100: "	hsl(220, 23%, 97%)",
+//     gray200: "hsl(0, 0%, 77%)",
+//     gray300: "hsl(0, 0%, 50%)",
+//     gray700: "hsl(0, 0%, 12%)",
+//   },
+//   fonts: {
+//     primary: `'Poppins', sans-serif`,
+//     accent: `serif`,
+//   },
+//   ease: {
+//     // easing functions
+//     slowStart: "cubic-bezier(0.52, 0.01, 0, 1)",
+//     quickStartAndEnd: "cubic-bezier(0.19, 1, 0.22, 1)",
+//     almostLinear: "cubic-bezier(0.4,0.6,0.6,1)",
+//     textReveal: "cubic-bezier(0.77, 0, 0.175, 1)",
+//   },
+//   borderRadius: {
+//     small: rem(5),
+//     medium: rem(10),
+//     large: rem(15),
+//   },
+// };
 
 /*********************************************************************
 CSS UTILITIES (similar to Sass mixins)

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { rem, size, theme } from "./Utilities.styled";
+import { rem, size } from "./Utilities.styled";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -12,7 +12,36 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         -webkit-text-size-adjust: 100%;
 
-        // insert CSS variables here
+        // CSS variables here ----------------------------------------
+
+        --clr-primary-400: 0;
+
+        --clr-white: hsl(0, 0%, 100%);
+        --clr-black: hsl(0, 0%, 0%);
+        --clr-gray-100: hsl(0, 0%, 97%);
+        --clr-gray-200: hsl(0, 0%, 87%);
+        --clr-gray-300: hsl(0, 0%, 77%);
+        --clr-gray-400: hsl(0, 0%, 67%);
+        --clr-gray-500: hsl(0, 0%, 57%);
+        --clr-gray-600: hsl(0, 0%, 47%);
+        --clr-gray-700: hsl(0, 0%, 37%);
+        --clr-gray-800: hsl(0, 0%, 27%);
+        --clr-gray-900: hsl(0, 0%, 17%);
+
+        --font-primary: "Poppins", sans-serif;
+        --font-secondary: serif;
+
+        --ease-slow-start: cubic-bezier(0.52, 0.01, 0, 1);
+        --ease-quick-start-and-end: cubic-bezier(0.19, 1, 0.22, 1);
+        --ease-almost-linear: cubic-bezier(0.4,0.6,0.6,1);
+        --ease-text-reveal: cubic-bezier(0.77, 0, 0.175, 1);
+
+        --border-radius-1: 3px;
+        --border-radius-2: 5px;
+        --border-radius-3: 10px;
+
+        // APP-SPECIFIC CSS variables here ----------------------------------------
+        
     }
 
     *, ::before, ::after {
@@ -28,8 +57,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         min-height: 100%;
-        background-color: ${theme.colors.white};
-        font-family: ${theme.fonts.primary};
+        background-color: var(--clr-white);
+        font-family: var(--font-primary);
         font-size: ${rem(16)};
         line-height: 1.5;
         overflow-x: hidden;

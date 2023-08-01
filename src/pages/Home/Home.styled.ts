@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { flexSpBetween, rem, theme } from "@styles/Utilities.styled";
+import { flexSpBetween, rem } from "@styles/Utilities.styled";
 
 
 export const StyledHome = styled.main`
@@ -9,8 +9,8 @@ export const StyledHome = styled.main`
     padding-block: 1rem;
     margin-top: 2rem;
     padding-inline: 1rem;
-    border-radius: ${theme.borderRadius.medium};
-    border: 1px solid ${theme.colors.gray200};
+    border-radius: var(--border-radius-3);
+    border: 1px solid var(--clr-gray-400);
   }
 
   img {
