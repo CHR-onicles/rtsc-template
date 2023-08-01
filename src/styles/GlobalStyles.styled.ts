@@ -58,6 +58,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         min-height: 100%;
         background-color: var(--clr-white);
+        /* background: color-mix(in srgb, var(--clr-gray-900) 50%, transparent); */
         font-family: var(--font-primary);
         font-size: ${rem(16)};
         line-height: 1.5;

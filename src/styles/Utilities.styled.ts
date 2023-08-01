@@ -53,16 +53,18 @@ export const alpha = (color: string, opacity = 1) => {
 
   // console.log(newColor, color);
   if (!newColor)
-    throw new Error("Invalid color provided - only hex and hsl are supported"); // ignore rgb - might as well make it hsl :)
+    throw new Error(
+      `Invalid color provided(${newColor}) - only hex and hsl are supported`
+    ); // ignore rgb - might as well make it hsl :)
   return newColor;
 };
 
-// Breakpoints object with values from mobile up
+// Breakpoints (mobile up)
 export const bp = {
-  small: `${rem(768, true)}em`, // tablets
-  medium: `${rem(1024, true)}em`, // large tablets/small laptops
-  large1: `${rem(1200, true)}em`, // medium-sized laptops
-  large2: `${rem(1440, true)}em`, // large-sized laptops
+  small: `${rem(768, true)}em`,
+  medium: `${rem(1024, true)}em`,
+  large1: `${rem(1200, true)}em`,
+  large2: `${rem(1440, true)}em`,
   large3: `${rem(1600, true)}em`,
   large4: `${rem(1920, true)}em`,
   extreme: `${rem(2100, true)}em`,
@@ -70,13 +72,13 @@ export const bp = {
 
 // Media queries
 export const mq = {
-  small: `min-width: ${bp.small}`,
-  medium: `min-width: ${bp.medium}`,
-  large1: `min-width: ${bp.large1}`,
-  large2: `min-width: ${bp.large2}`,
-  large3: `min-width: ${bp.large3}`,
-  large4: `min-width: ${bp.large4}`,
-  extreme: `min-width: ${bp.extreme}`,
+  small: `(min-width: ${bp.small})`,
+  medium: `(min-width: ${bp.medium})`,
+  large1: `(min-width: ${bp.large1})`,
+  large2: `(min-width: ${bp.large2})`,
+  large3: `(min-width: ${bp.large3})`,
+  large4: `(min-width: ${bp.large4})`,
+  extreme: `(min-width: ${bp.extreme})`,
 };
 
 // export const theme = {
@@ -151,14 +153,19 @@ export const pseudo = css`
   position: absolute;
 `;
 
-export const size = (width: string, height = width) => {
-  return css`
-    width: ${width};
-    height: ${height};
-  `;
-};
+export const size = (width: string, height = width) => css`
+  width: ${width};
+  height: ${height};
+`;
 
-export const textRevealFromBottom = keyframes`
+export const circle = (circleSize: string) => css`
+  ${size(circleSize)}
+  border-radius: 50%;
+`;
+
+export const media = (bp: string) => `@media screen and (min-width: ${bp})`;
+
+export const revealFromBottom = keyframes`
   to {
     transform: translateY(0%) skewY(0);
 }
