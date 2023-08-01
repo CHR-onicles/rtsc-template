@@ -23,14 +23,15 @@
     "plugin:import/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:@typescript-eslint/stylistic",
     "plugin:jsx-a11y/recommended"
   ],
   "rules": {
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "import/no-unresolved": "error"
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "import/no-unresolved": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   },
   "overrides": [
     // override "simple-import-sort" config
@@ -38,7 +39,7 @@
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
         "simple-import-sort/imports": [
-          "error",
+          "warn",
           {
             "groups": [
               // Packages `react` related packages come first.

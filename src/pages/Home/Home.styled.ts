@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { flexSpBetween, rem, theme } from "@styles/Utilities.styled";
 
 
-export const StyledApp = styled.main`
+export const StyledHome = styled.main`
   nav {
     ${flexSpBetween}
     padding-block: 1rem;
