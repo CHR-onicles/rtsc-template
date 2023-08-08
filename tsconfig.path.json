@@ -10,7 +10,8 @@
       "@pages/*": ["src/pages/*"],
       "@hooks/*": ["src/hooks/*"],
       "@customTypes/*": ["src/types/*"],
-      "@contexts/*": ["src/contexts/*"]
+      "@contexts/*": ["src/contexts/*"],
+      "@layouts/*": ["src/layouts/*"]
     }
   }
 }
