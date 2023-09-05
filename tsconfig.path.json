@@ -11,7 +11,8 @@
       "@hooks/*": ["src/hooks/*"],
       "@customTypes/*": ["src/types/*"],
       "@contexts/*": ["src/contexts/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@constants/*": ["src/constants/*"]
     }
   }
 }
