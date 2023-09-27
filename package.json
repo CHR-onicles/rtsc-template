@@ -15,7 +15,7 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.23",
+    "@studio-freight/lenis": "^1.0.24",
     "@tanstack/react-query": "^4.32.6",
     "@tanstack/react-query-devtools": "^4.35.3",
     "axios": "^1.5.1",
