@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-use": "^17.4.0",
-    "styled-components": "^6.0.8"
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.36.1",
@@ -43,8 +43,8 @@
     "lint-staged": "^14.0.1",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
-    "vite-plugin-svgr": "^3.2.0",
-    "vite-tsconfig-paths": "^4.2.0",
+    "vite-plugin-svgr": "^3.3.0",
+    "vite-tsconfig-paths": "^4.2.1",
     "vitest": "^0.34.6"
   },
   "lint-staged": {
