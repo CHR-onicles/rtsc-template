@@ -3,6 +3,7 @@ import {
   createRoutesFromElements,
   Outlet,
   Route,
+  ScrollRestoration,
 } from "react-router-dom";
 
 import { Home } from "@pages/Home";
@@ -11,6 +12,7 @@ import { Home } from "@pages/Home";
 const Root = () => {
   return (
     <>
+      <ScrollRestoration />
       <Outlet />
     </>
   );
