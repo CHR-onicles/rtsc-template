@@ -12,7 +12,7 @@ export const StyledHome = styled.main`
     border-radius: var(--border-radius-3);
   }
 
-  img {
+  .img-wrapper {
     width: min(100%, ${rem(1000)});
     margin: 3rem auto;
   }

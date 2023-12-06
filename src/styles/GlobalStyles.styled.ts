@@ -73,13 +73,18 @@ export const GlobalStyles = createGlobalStyle`
         line-height: 1.2;
     }
 
-    img, iframe {
-        display: block;
+    img {
+        vertical-align: middle;
         ${size("100%")}
         max-width: 100%;
+        font-style: italic; // Distinguish alt text
         object-fit: cover;
         object-position: center;
         border-style: none;  // Remove the border on images inside links in IE 10.
+
+        // To be used in conjunction with low-res placeholder images as backgrounds 
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
     }
 
     ul, ol {

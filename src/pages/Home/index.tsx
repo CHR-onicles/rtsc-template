@@ -14,7 +14,9 @@ export const Home = () => {
           <h2>rtsc-template</h2>
           <Logo />
         </nav>
-        <img src={Image} alt="black panther movie poster" />
+        <div className="img-wrapper">
+          <img src={Image} alt="black panther movie poster" />
+        </div>
         <main>
           <h2>Random header 1</h2>
           <p>
