@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-use": "^17.4.2",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.36.1",
