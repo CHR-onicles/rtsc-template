@@ -97,6 +97,13 @@ export const clipBorderRadius = (borderRadius: string) => css`
   overflow: hidden;
 `;
 
+export const lineClamp = (numOfLines: number) => css`
+  display: -webkit-box;
+  -webkit-line-clamp: ${numOfLines};
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+`;
+
 export const media = (bp: string) => `@media screen and (min-width: ${bp})`;
 
 export const revealFromBottom = keyframes`
