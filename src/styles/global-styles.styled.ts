@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { rem, size } from "./utilities1.styled";
+import { rem, size } from "./utilities.styled";
 
 
 export const GlobalStyles = createGlobalStyle`

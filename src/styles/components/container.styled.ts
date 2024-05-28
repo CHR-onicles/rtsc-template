@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { rem } from "../utilities1.styled";
+import { rem } from "../utilities.styled";
 
 
 export const Container = styled.div`
