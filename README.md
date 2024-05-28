@@ -17,6 +17,7 @@ Personal template for React projects
 - [ ] Page title
 - [ ] Fav icon
 - [ ] Meta description
+- [ ] Generate sitemap
 
 ### TESTS
 

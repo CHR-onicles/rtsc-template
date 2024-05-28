@@ -1,7 +1,7 @@
 import { Container } from "@styles/components/Container.styled";
 
 import Image from "@assets/black-panther.webp";
-import { ReactComponent as Logo } from "@assets/react.svg";
+import Logo from "@assets/react.svg?react";
 
 import { StyledHome } from "./Home.styled";
 
