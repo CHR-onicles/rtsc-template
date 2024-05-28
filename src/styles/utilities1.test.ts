@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { bp, mq, rem } from "./Utilities.styled";
+import { bp, mq, rem } from "./utilities.styled";
 
 
 describe("Properly convert from px to rem", () => {

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { rem, size } from "./Utilities.styled";
+import { rem, size } from "./utilities.styled";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -53,6 +53,27 @@ export const GlobalStyles = createGlobalStyle`
     html {
         /* scroll-behavior: smooth; */ // for faster scroll to top during page transitions
         /* height: 100%; */ // Lenis needs this to be auto
+    }
+
+        // Recommended CSS for Lenis
+        html.lenis, html.lenis body {
+        height: auto;
+    }
+
+    .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+    }
+
+    .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+    }
+
+    .lenis.lenis-stopped {
+        overflow: hidden;
+    }
+
+    .lenis.lenis-scrolling iframe {
+        pointer-events: none;
     }
 
     body {

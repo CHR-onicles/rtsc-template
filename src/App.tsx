@@ -1,7 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 import { ReactLenis } from "@studio-freight/react-lenis";
 
-import { GlobalStyles } from "@styles/GlobalStyles.styled";
+import { GlobalStyles } from "@styles/global-styles.styled";
 
 import { router } from "./router";
 

@@ -1,9 +1,9 @@
-import { Container } from "@styles/components/Container.styled";
+import { Container } from "@styles/components/container1.styled";
 
 import Image from "@assets/black-panther.webp";
 import Logo from "@assets/react.svg?react";
 
-import { StyledHome } from "./Home.styled";
+import { StyledHome } from "./home1.styled";
 
 
 export const Home = () => {
