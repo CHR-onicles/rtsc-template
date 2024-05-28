@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { mq, rem } from "@styles/utilities.styled";
+import { mq, rem } from "@styles/utilities1.styled";
 
 
 export const SectionText = styled.p`

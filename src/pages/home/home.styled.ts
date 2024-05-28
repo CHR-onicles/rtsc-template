@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { flexSpBetween, rem } from "@styles/utilities.styled";
+import { flexSpBetween, rem } from "@styles/utilities1.styled";
 
 
 export const StyledHome = styled.main`
