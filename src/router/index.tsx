@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "react-router-dom";
 
-import { Home } from "@pages/home1";
+import { Home } from "@pages/home";
 
 
 const Root = () => {
