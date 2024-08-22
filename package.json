@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
-    "@tanstack/react-query": "^5.51.23",
+    "@tanstack/react-query": "^5.52.1",
     "@tanstack/react-query-devtools": "^5.51.23",
     "axios": "^1.7.4",
     "react": "^18.3.1",
