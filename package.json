@@ -29,7 +29,7 @@
     "@tanstack/eslint-plugin-query": "^5.68.0",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^3.1.1",
