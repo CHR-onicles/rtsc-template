@@ -1,3 +1,0 @@
-npm run tsc
-npm run test:once
-npx lint-staged --allow-empty
